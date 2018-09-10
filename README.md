@@ -2,4 +2,6 @@
 Ejercicios DIW
 
 
-Ejempl
+Ejemplo 1
+
+comandos basicos
