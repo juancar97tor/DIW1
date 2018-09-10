@@ -8,4 +8,7 @@ comandos basicos
 
 * git pull
 * gir commit -a -m "coment"
-* git push
+* git pus
+## Entrar y salir vim
+* vim Archivo
+* esc :wq
