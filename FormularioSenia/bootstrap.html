@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="bootstrap.js"></script>
+</head>
+<body>
+       
+
+
+<div class="container">
+        
+    <img id="img1" src="img/geneVale.png" class="float-left" >
+    <img id="img2" src="img/laSenia.png"  class="float-right">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="text-center">COMUNICACIÓ DE MESURES CORRECTORES</h3>
+
+    <br>
+    <br>
+   
+
+
+    <form onsubmit="return onSubmit(this)">
+        <p>ALUMNE/A <input name="alumne" type="text" class="m-2"> GRUP <input name="grupo" type="text" class="m-2"></p>
+        <p>PROFESSOR/A <input name="profesor" type="text" class="m-2">Horari d'atenció <input type="text" class="m-2"></p>
+        <p>Data de l'incident <input name="data" type="text" class="m-2">Hora <input name="hora" type="text" class="m-2">
+            Lloc <input name="lloc" type="text" class="m-2"></p>
+
+            <p>Descripcio de l'incident:</p><textarea cols="100" rows="10"></textarea>
+
+        <p>En aplicacio de l'article 37 del decret 39/08 sobre drets y deures, es comunica al para/mare de l'alumne
+            <br /> la imposicio de la següent mesura correctora:</p>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="tipoAmonA">
+            <label class="form-check-label" for="tipoAmonA">Amonestacio verbal</label><br />
+
+            <input class="form-check-input" type="checkbox" value="" id="tipoAmonB">
+            <label class="form-check-label" for="tipoAmonB">Compareixença davant el cap d'estudis/director</label><br />
+
+            <input class="form-check-input" type="checkbox" value="" id="tipoAmonC">
+            <label class="form-check-label" for="tipoAmonC">Amonestacio per escrit</label><br />
+
+            <input class="form-check-input" type="checkbox" value="" id="tipoAmonD">
+            <label class="form-check-label" for="tipoAmonD">Retirada d'aparells electronics(1)</label>
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="tipoAmonE">Privacio del temps de recreacio els dies
+                </div>
+                
+                <div class="col">
+                    <input name="dies" type="text" class="form-control">
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="tipoAmonE">
+                </div>
+                <div class="col">
+                    <label class="form-check-label " for="tipoAmonE">Privacio del temps de recreacio els dies
+                </div>
+                <div class="col">
+                    <input name="dies" type="text" class="form-control"></label>
+                </div>
+            </div>
+            
+            <input class="form-check-input" type="checkbox" value="" id="tipoAmonF">
+            <label class="form-check-label" for="tipoAmonF">Incorporacio a l'aula de convivencia</label><br />
+            -->
+            <div class="row">
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="tipoAmonG">Realitzacio de les següents tasques educadores:
+                </div>
+                
+                <div class="col">
+                    <input name="tasques" type="text" class="form-control">
+                </div>
+
+                <div class="col">
+                    el dies
+                </div>
+                
+                <div class="col">
+                    <input name="dies1" type="text" class="form-control">
+                </div>
+
+                <div class="col">
+                    <!--<input class="form-check-input" type="checkbox" value="">i amb l'horari-->
+                    i amb l'horari
+                </div>
+                
+                <div class="col">
+                    <input name="horari" type="text" class="form-control">
+                </div>
+            </div>
+
+            <!--<input class="form-check-input" type="checkbox" value="" id="tipoAmonG">
+            <label class="form-check-label" for="tipoAmonG">Realitzacio de les següents tasques educadores:
+                <input name="tasques" type="text" class="m-2"><br />
+                el dies <input name="dies1" type="text" class="m-2">i amb l'horari<input name="horari" type="text"
+                    v></label><br />
+            -->
+
+            <!--
+                <input class="form-check-input" type="checkbox" value="" id="tipoAmonH">
+                <label class="form-check-label" for="tipoAmonH">Suspensio del dret a participar en activitats
+                extraescolars i complementaries des de</label></div>
+            -->
+
+            <div class="row">
+                <div class="col-16">
+                    <div class="col">
+                     <input class="form-check-input" type="checkbox" value="" id="tipoAmonH" name="extracolars">Suspensio del dret a participar en activitats
+                extraescolars i complementaries <label class="col-form-label-sm">(2)</label>
+                        </div>
+                
+                    <div class="col">
+                        <input name="suspensio" type="text" class="m-1" placeholder="des de" ><input type="text" class="form-control m-1" placeholder="Fins a">
+                    </div>
+                </div>
+          </div>
+
+        <div class="row">
+                <div class="col-16">
+                    <div class="col">
+                            <input class="form-check-input " type="checkbox" value="" id="tipoAmonI">Suspensio del dret de l'assistencia a les classes de
+                    </div>
+                    <div class="col">
+                        <input name="assistencia" type="text" class="form-control  " placeholder="Assignatura/s">
+                    </div>
+                    <div class="col">
+                    <input name="desde" type="text" class="form-control m-1" placeholder="Desde"> 
+                    </div>
+                    <div class="col">
+                        <input name="fina" type="text" class="form-control m-1" placeholder="Fins a">
+                    </div>
+            </div>
+        </div>
+        <!--
+        <div class="row">
+            <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="tipoAmonI">suspensio del dret de l'assistencia a les classes de    
+            </div>
+            <div class="col">
+                <input name="assistencia" type="text" class="m-1">
+            </div>
+            <div class="col">
+                des de <input name="desde" type="text" class="m-1"> 
+            </div>
+            <div class="col">
+                fins a <input name="fina" type="text" class="m-1">
+            </div>
+        </div>
+        -->
+    </div>
+    <p>Tipificacio(3) de l'incident segons l'article 35: 
+
+    <form>
+            <div class="multiselect">
+              <div class="selectBox" onclick="showCheckboxes()">
+                <select>
+                  <option>Tipificacio</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="checkboxes">
+                <label for="tip1">
+                  <input type="checkbox" class="check-with-label" id="tip1" />Les faltes de puntualitat injustificades.</label>
+                <label for="tip2">
+                  <input type="checkbox" id="tip2" />Les faltes d'assistència injustificades.</label>
+                <label for="tip3">
+                  <input type="checkbox" id="tip3" />Els actes que alteren el normal desenvolupament de les activitats del centre educatiu, especialment els que alteren el normal desenvolupament de les classes.</label>
+              
+                <label for="tip4">
+                  <input type="checkbox" id="tip4" />Els actes d'indisciplina</label>
+      
+                <label for="tip5">
+                  <input type="checkbox" id="tip5" />Els actes d'incorreció o desconsideració, les injúries i les ofenses contra els membres de la comunitat educativa.</label>
+
+                <label for="tip6">
+                    <input type="checkbox" id="tip6" />El furt o deteriorament intencionat d'inmobles, materials, documentació o recursos del centre.</label>
+                <label for="tip7">
+                    <input type="checkbox" id="tip7" />El furt o deteriorament intencionat dels béns o materials dels membres de la comunitat educativa.</label>
+            
+                <label for="tip8">
+                    <input type="checkbox" id="tip8" />Les accions que puguen ser perjudicials per a la integritat i la salut dels membres de la comunitat educativa.</label>
+                
+                <label for="tip9">
+                    <input type="checkbox" id="tip9" />La negativa sistematica a portar el material necessari per al desenvolupament del procés d'enseyament-aprenentatge.</label>
+
+                <label for="tip10">
+                    <input type="checkbox" id="tip10" />La negativa a traslladar la informació facilitada als pares, mares, tutors, o utores per part del centre i viceversa.</label>
+
+                <label for="tip11">
+                    <input type="checkbox" id="tip11" />L'alteració o manipulació de la documentació facilitada als pares, mares, tutors, o tutores per part del centre.</label>
+
+                <label for="tip12">
+                    <input type="checkbox" id="tip12" />La suplantació de la personalitat del membres de la comunitat escolar.</label>
+
+                <label for="tip13">
+                    <input type="checkbox" id="tip13" />La utilització inadequada de les tecnologies de la informació i comunicació durant les activitats que es realitzen en el centre educatiu.</label>
+
+                <label for="tip14">
+                    <input type="checkbox" id="tip14" />L'us de telèfons mòbils, aparells de so i altres aparells electrònics aliens als procés d'ensenyament-aprenentatge. Durant les activitas que es realitzen en el centre educatiu.</label>
+
+                <label for="tip15">
+                    <input type="checkbox" id="tip15" />Els actes que dificulten o impedisquen el dret i deure de l'estudi dels seus companys y companyes.</label>
+
+                <label for="tip16">
+                    <input type="checkbox" id="tip16" />La incitació o estímul a cometre una falta contrària a les normes de convivència.</label>
+
+                <label for="tip17">
+                    <input type="checkbox" id="tip17" />La negativa al compliment de les mesures correctores adoptades davant de conductes contràries a les normes de convivència.</label>
+                <label for="tip18">
+                    <input type="checkbox" id="tip18" />L'us inadequat de les infraestructures i béns o equips materials del centre.</label>
+                <label for="tip19">
+                    <input type="checkbox" id="tip19" />La desobediéncia en el compliment de les normes de carácter propi del centre i que estiguen incloses en el seu projecte educatiu.</label>
+                                                        
+            
+                </div>
+            </div>
+          </form>
+
+
+
+
+
+</p>
+
+    <p>La comunicacio als pares es fa pels següents mitjans: Telefon <br/>
+    <input name="telefon" type="text"><br/>
+    Per correu, Per mig de l'alumne, Amb compareixença del pare/mare/tutor legal.
+    </p>
+    <p>Paiporta,<input name="paiporta" type="text">de<input name="de" type="text">de 201<input name="anio" type="text"></p>
+    <br/>
+
+    <p>Signatura del professor/a           Signatura del cap d'estudis/director</p>
+    <input name="signaturap" type="text">                             <input name="signaturad" type="text">
+
+
+    <p>(1) El pare o la mare de l'alumne podra retirar l'aparell del dia següent de rebre esta notificacio en la direccio d'estudis.</p>
+    <p>(2) El pare o la mare de l'alumne disposa d'un termini de 10 dies a partir de rebre esta comunicacio per al preceptiu tramit <br/>
+    d'audiencia amb el professor que ha imposat la mesura correctora. Per la qual cosa l'horari d'atencio del professor figura al<br/>
+    costal del seu nom i el telefon de l'institut en la capçalera.</p>
+    <p>(3) Tipificacio<br/></p>
+    
+
+</div>
+
+<input type="submit" value="Submit">
+
+</form>
+
+    
+</body>
+</html>
