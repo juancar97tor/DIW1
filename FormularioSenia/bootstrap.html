@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="bootstrap.js"></script>
-</head>
+
+        <head>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                    crossorigin="anonymous">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Document</title>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                    crossorigin="anonymous"></script>
+                <script src="bootstrap.js"></script>
+            </head>
 <body>
        
 
@@ -42,6 +45,11 @@
 
             <p>Descripcio de l'incident:</p><textarea cols="100" rows="10"></textarea>
 
+
+
+
+
+
         <p>En aplicacio de l'article 37 del decret 39/08 sobre drets y deures, es comunica al para/mare de l'alumne
             <br /> la imposicio de la següent mesura correctora:</p>
 
@@ -61,66 +69,37 @@
                 <div class="col">
                     <input class="form-check-input" type="checkbox" value="" id="tipoAmonE">Privacio del temps de recreacio els dies
                 </div>
-                
                 <div class="col">
-                    <input name="dies" type="text" class="form-control">
+                   
+                    <input name="dia1castigopatio" type="date" class="form-control  " placeholder="dia1castigopatio">
+                </div>
+                <div class="col">
+                   
+                <input name="ultimodiacastigopatio" type="date" class="form-control m-1" placeholder="ultimodiacastigopatio"> 
                 </div>
             </div>
-            <!--
-            <div class="row">
-                <div class="col">
-                    <input class="form-check-input" type="checkbox" value="" id="tipoAmonE">
-                </div>
-                <div class="col">
-                    <label class="form-check-label " for="tipoAmonE">Privacio del temps de recreacio els dies
-                </div>
-                <div class="col">
-                    <input name="dies" type="text" class="form-control"></label>
-                </div>
-            </div>
-            
-            <input class="form-check-input" type="checkbox" value="" id="tipoAmonF">
-            <label class="form-check-label" for="tipoAmonF">Incorporacio a l'aula de convivencia</label><br />
-            -->
+  
             <div class="row">
                 <div class="col">
                     <input class="form-check-input" type="checkbox" value="" id="tipoAmonG">Realitzacio de les següents tasques educadores:
                 </div>
                 
                 <div class="col">
-                    <input name="tasques" type="text" class="form-control">
+                    <input name="tasques" type="text" class="form-control" placeholder="Tarea">
                 </div>
 
-                <div class="col">
-                    el dies
-                </div>
+               
                 
                 <div class="col">
-                    <input name="dies1" type="text" class="form-control">
+                    <input name="diatrabajo" type="date" class="form-control">
                 </div>
 
-                <div class="col">
-                    <!--<input class="form-check-input" type="checkbox" value="">i amb l'horari-->
-                    i amb l'horari
-                </div>
+               
                 
                 <div class="col">
-                    <input name="horari" type="text" class="form-control">
+                    <input name="horariorealizacion" type="datetime" class="form-control" placeholder="horario realizacion">
                 </div>
             </div>
-
-            <!--<input class="form-check-input" type="checkbox" value="" id="tipoAmonG">
-            <label class="form-check-label" for="tipoAmonG">Realitzacio de les següents tasques educadores:
-                <input name="tasques" type="text" class="m-2"><br />
-                el dies <input name="dies1" type="text" class="m-2">i amb l'horari<input name="horari" type="text"
-                    v></label><br />
-            -->
-
-            <!--
-                <input class="form-check-input" type="checkbox" value="" id="tipoAmonH">
-                <label class="form-check-label" for="tipoAmonH">Suspensio del dret a participar en activitats
-                extraescolars i complementaries des de</label></div>
-            -->
 
             <div class="row">
                 <div class="col-16">
@@ -151,43 +130,23 @@
                     </div>
             </div>
         </div>
-        <!--
-        <div class="row">
-            <div class="col">
-                    <input class="form-check-input" type="checkbox" value="" id="tipoAmonI">suspensio del dret de l'assistencia a les classes de    
-            </div>
-            <div class="col">
-                <input name="assistencia" type="text" class="m-1">
-            </div>
-            <div class="col">
-                des de <input name="desde" type="text" class="m-1"> 
-            </div>
-            <div class="col">
-                fins a <input name="fina" type="text" class="m-1">
-            </div>
+        
         </div>
-        -->
-    </div>
     <p>Tipificacio(3) de l'incident segons l'article 35: 
 
-    <form>
-            <div class="multiselect">
-              <div class="selectBox" onclick="showCheckboxes()">
-                <select>
-                  <option>Tipificacio</option>
-                </select>
-                <div class="overSelect"></div>
-              </div>
+            <h3>Tipificacio</h3>
+                
+              
               <div id="checkboxes">
                 <label for="tip1">
-                  <input type="checkbox" class="check-with-label" id="tip1" />Les faltes de puntualitat injustificades.</label>
+                  <input type="checkbox" class="check-with-label" id="tip1" />Les faltes de puntualitat injustificades.</label><br>
                 <label for="tip2">
                   <input type="checkbox" id="tip2" />Les faltes d'assistència injustificades.</label>
                 <label for="tip3">
                   <input type="checkbox" id="tip3" />Els actes que alteren el normal desenvolupament de les activitats del centre educatiu, especialment els que alteren el normal desenvolupament de les classes.</label>
               
                 <label for="tip4">
-                  <input type="checkbox" id="tip4" />Els actes d'indisciplina</label>
+                  <input type="checkbox" id="tip4" />Els actes d'indisciplina</label><br>
       
                 <label for="tip5">
                   <input type="checkbox" id="tip5" />Els actes d'incorreció o desconsideració, les injúries i les ofenses contra els membres de la comunitat educativa.</label>
@@ -231,10 +190,10 @@
                 <label for="tip19">
                     <input type="checkbox" id="tip19" />La desobediéncia en el compliment de les normes de carácter propi del centre i que estiguen incloses en el seu projecte educatiu.</label>
                                                         
-            
+                
                 </div>
-            </div>
-          </form>
+                
+       
 
 
 
@@ -260,11 +219,14 @@
     <p>(3) Tipificacio<br/></p>
     
 
-</div>
+    <input type="submit" value="Enviar Formulario">
 
-<input type="submit" value="Submit">
 
 </form>
+</div>
+
+
+
 
     
 </body>
